@@ -64,10 +64,8 @@ public class AdminUser extends User implements HIPAACompliantUser, HIPAAComplian
 
 	@Override
 	public ArrayList<String> reportSecurityIncidents() {
-//		for(String i: this.securityIncidents){
-//	        System.out.println(securityIncidents(i));
-//	        }
-		return null;
+		return this.getSecurityIncidents();
+		
 	}
 	 public void newIncident(String notes) {
 	        String report = String.format(

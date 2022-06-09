@@ -7,6 +7,14 @@ public class Physician extends User implements HIPAACompliantUser {
 	 private ArrayList<String> patientNotes;
 		
 	
+	public ArrayList<String> getPatientNotes() {
+		return patientNotes;
+	}
+
+	public void setPatientNotes(ArrayList<String> patientNotes) {
+		this.patientNotes = patientNotes;
+	}
+
 	// TO DO: Constructor that takes an ID
 	 public Physician() {}
 	 
@@ -45,11 +53,5 @@ public class Physician extends User implements HIPAACompliantUser {
 			return false;
 		}
 	}
-    public ArrayList<String> getPatientNotes() {
-		return patientNotes;
-	}
-
-	public void setPatientNotes(ArrayList<String> patientNotes) {
-		this.patientNotes = patientNotes;
-	}
+	
 }
